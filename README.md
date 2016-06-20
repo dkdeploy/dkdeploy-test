@@ -1,4 +1,4 @@
-# Dkdeploy::Test
+# Dkdeploy::TestEnvironment
 
 [![Gem Version](https://badge.fury.io/rb/dkdeploy-test_environment.svg)](https://badge.fury.io/rb/dkdeploy-test_environment)
 

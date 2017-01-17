@@ -127,11 +127,7 @@ Then(/^remote permissions of "([^"]*)" (should|should not) contain "(user|group|
     raise ArgumentError, 'The given permissions can not be mapped'
   end
 
-  if should_or_not == 'should'
-    expect(decision).to be true
-  else
-    expect(decision).to be false
-  end
+  expect(decision).to be(should_or_not == 'should')
 end
 
 When(/^I store the symlink source of current$/) do

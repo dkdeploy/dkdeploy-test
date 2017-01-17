@@ -18,11 +18,11 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)\/})
   spec.require_paths = ['lib']
 
-  spec.add_dependency 'bundler',  '~> 1.13.0'
+  spec.add_dependency 'bundler',  '~> 1.12.5'
   spec.add_dependency 'rake',     '~> 11.2'
   spec.add_dependency 'rspec',    '~> 3.5'
   spec.add_dependency 'cucumber', '~> 2.4'
-  spec.add_dependency 'rubocop',  '~> 0.42'
+  spec.add_dependency 'rubocop',  '0.46'
   spec.add_dependency 'aruba',    '~> 0.14'
   spec.add_dependency 'mysql2',   '~> 0.3.21'
   spec.add_dependency 'pry',      '~> 0.10.3'

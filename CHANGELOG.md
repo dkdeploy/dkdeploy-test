@@ -5,6 +5,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 ### Added
 - Bundler, Capistrano updates
+- moved dependencies to development dependencies
 
 
 ## [1.0.0] - 2016-06-20

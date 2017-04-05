@@ -1,4 +1,5 @@
 # coding: utf-8
+
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'dkdeploy/test_environment/version'
@@ -12,19 +13,21 @@ Gem::Specification.new do |spec|
   spec.description   = 'test infrastructure for dkdeploy'
   spec.summary       = 'dkdeploy-test_environment provides a test application for dkdeploy'
   spec.homepage      = 'https://github.com/dkdeploy/dkdeploy-test_environment'
+  spec.required_ruby_version = '~> 2.2'
 
   spec.files         = `git ls-files`.split($/)
   spec.executables   = spec.files.grep(%r{^bin\/}) { |f| File.basename(f) }
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)\/})
   spec.require_paths = ['lib']
 
-  spec.add_dependency 'bundler',  '~> 1.12.5'
-  spec.add_dependency 'rake',     '~> 11.2'
-  spec.add_dependency 'rspec',    '~> 3.5'
-  spec.add_dependency 'cucumber', '~> 2.4'
-  spec.add_dependency 'rubocop',  '0.46'
-  spec.add_dependency 'aruba',    '~> 0.14'
-  spec.add_dependency 'mysql2',   '~> 0.3.21'
-  spec.add_dependency 'pry',      '~> 0.10.3'
-  spec.add_dependency 'sshkit',   '~> 1.10.0'
+  spec.add_dependency 'bundler'
+  spec.add_dependency 'rake'
+
+  spec.add_development_dependency 'aruba',    '~> 0.14'
+  spec.add_development_dependency 'mysql2',   '~> 0.3'
+  spec.add_development_dependency 'pry',      '~> 0.10.3'
+  spec.add_development_dependency 'cucumber', '~> 2.4'
+  spec.add_development_dependency 'rspec',    '~> 3.5'
+  spec.add_development_dependency 'rubocop',  '~> 0.48.1'
+  spec.add_development_dependency 'sshkit',   '~> 1.13'
 end

@@ -1,6 +1,8 @@
-# Dkdeploy::Test
+![dkdeploy::core](assets/dkdeploy-logo.png)
 
-[![Gem Version](https://badge.fury.io/rb/dkdeploy-test_environment.svg)](https://badge.fury.io/rb/dkdeploy-test_environment)
+# Dkdeploy::TestEnvironment
+
+[![Gem Version](https://badge.fury.io/rb/dkdeploy-test_environment.svg)](https://badge.fury.io/rb/dkdeploy-test_environment) [![Inline docs](http://inch-ci.org/github/dkdeploy/dkdeploy-core.svg?branch=develop)](http://inch-ci.org/github/dkdeploy/dkdeploy-core)
 
 ## Description
 

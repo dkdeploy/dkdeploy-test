@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.name          = 'dkdeploy-test_environment'
   spec.version       = Dkdeploy::TestEnvironment::Version
   spec.license       = 'MIT'
-  spec.authors       = ['Lars Tode', 'Timo Webler', 'Kieran Hayes', 'Nicolai Reuschling', 'Johannes Goslar']
-  spec.email         = ['lars.tode@dkd.de', 'timo.webler@dkd.de', 'kieran.hayes@dkd.de', 'nicolai.reuschling@dkd.de', 'johannes.goslar@dkd.de']
+  spec.authors       = ['Lars Tode', 'Timo Webler', 'Kieran Hayes', 'Nicolai Reuschling']
+  spec.email         = ['lars.tode@dkd.de', 'timo.webler@dkd.de', 'kieran.hayes@dkd.de', 'nicolai.reuschling@dkd.de']
   spec.description   = 'test infrastructure for dkdeploy'
   spec.summary       = 'dkdeploy-test_environment provides a test application for dkdeploy'
   spec.homepage      = 'https://github.com/dkdeploy/dkdeploy-test_environment'

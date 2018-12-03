@@ -47,10 +47,10 @@ module Dkdeploy
       #
       def initialize_environment
         # Call command at test bundler environment. Not with gem bundler environment
-        Bundler.with_clean_env do
+        ::Bundler.with_clean_env do
           cd test_app_path do
             # Install necessary gems
-            `bundle check || bundle install`
+            `bundle check --gemfile Gemfile || bundle install --gemfile Gemfile`
             raise "Error running 'bundle install'" unless $?.success?
           end
         end
